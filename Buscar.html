@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Cerveza - Inventario</title>
+    <link rel="stylesheet" href="Buscar cerveza.css">
+    <script src="Buscar.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-beer"></i> Buscar Cerveza en el Inventario</h1>
+        </header>
+        <div class="app-container">
+            <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <li>
+                            <ul>
+               <ul class="dropdown-menu">
+    <li>
+        <a href="cerveza.html" class="btn btn-secondary">
+            <i class="fas fa-list"></i> Volver al inicio
+        </a>
+    </li>
+</ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="content">
+                <section id="buscar" class="section active">
+                    <div class="buscar-container">
+                        <h2><i class="fas fa-search"></i> Buscar Cerveza</h2>
+                        <form id="form-buscar">
+                            <div class="form-group">
+                                <label for="nombre-buscar">Nombre de la cerveza:</label>
+                                <input type="text" id="nombre-buscar" required>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-search"></i> Buscar
+                                </button>
+                                <button type="reset" class="btn btn-secondary">
+                                    <i class="fas fa-times"></i> Limpiar
+                                </button>
+                            </div>
+                        </form>
+                        <div id="resultado-busqueda" class="resultado"></div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

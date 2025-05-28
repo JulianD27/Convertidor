@@ -1,0 +1,151 @@
+/* Inventario.css - Estilo moderno y consistente con los anteriores */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #343a40;
+    color: #fff;
+    padding: 1rem;
+    width: 250px;
+    min-height: 100vh;
+    box-shadow: 2px 0 4px rgba(0,0,0,0.1);
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    padding: 0.8rem 1rem;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar nav ul li:hover {
+    background-color: #007bff;
+}
+
+/* Main Content */
+.app-container {
+    display: flex;
+}
+
+.content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.section {
+    display: block;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #444;
+    text-align: center;
+}
+
+.inventario-container {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cerveza-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 1rem 0;
+}
+
+.cerveza-item:last-child {
+    border-bottom: none;
+}
+
+.cerveza-item p {
+    margin: 0.2rem 0;
+    font-size: 1.05rem;
+    color: #333;
+}
+
+/* Botón secundario */
+.btn.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    border-top: 2px solid #007bff;
+    border-bottom: 2px solid #007bff;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: none;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.btn.btn-secondary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .app-container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+    }
+    .inventario-container {
+        padding: 1rem 0.5rem;
+        max-width: 98vw;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+}
