@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Cerveza</title>
+    <link rel="stylesheet" href="agregar cerveza.css">
+    <script src="agregar cerveza.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1><i class="fas fa-beer"></i> Venta de Cerveza</h1>
+    </header>
+    <div class="app-container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li>
+                        <ul class="fas fa-list">
+                            <a href="cerveza.html">
+                                <button>Volver al inicio</button>
+                            </a>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <section id="vender" class="section active">
+                <div class="vender-container">
+                    <h2><i class="fas fa-cash-register"></i> Realizar Venta de Cerveza</h2>
+                    <form id="form-vender">
+                        <div class="form-group">
+                            <label for="nombre-cerveza">Nombre de la Cerveza:</label>
+                            <input type="text" id="nombre-cerveza" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="marca-cerveza">Marca:</label>
+                            <input type="text" id="marca-cerveza" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="empaque">Empaque:</label>
+                            <select id="empaque" required>
+                                <option value="">Seleccione un empaque</option>
+                                <option value="lata">Lata</option>
+                                <option value="botella">Botella</option>
+                                <option value="litron">Litron</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="cantidad-vender">Cantidad a Vender:</label>
+                            <input type="number" id="cantidad-vender" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="unidad-venta">Unidad de Venta:</label>
+                            <select id="unidad-venta" required>
+                                <option value="">Seleccione una unidad</option>
+                                <option value="unidad">Unidad</option>
+                                <option value="six">Six</option>
+                                <option value="canasta">Canasta</option>
+                            </select>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-shopping-cart"></i> Realizar Venta
+                            </button>
+                            <button type="reset" class="btn btn-secondary">
+                                <i class="fas fa-times"></i> Limpiar
+                            </button>
+                        </div>
+                    </form>
+                    <div id="resultado-venta" class="resultado"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+</body>
+</html>

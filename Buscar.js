@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (cerveza) {
             resultadoBusqueda.innerHTML = `
                 <p><strong>Nombre:</strong> ${cerveza.nombre}</p>
-                <p><strong>Marca:</strong> ${cerveza.marca}</p>
+                <p><strong>Unidad de venta:</strong> ${cerveza.marca}</p>
                 <p><strong>Tipo:</strong> ${cerveza.tipo}</p>
                 <p><strong>Cantidad:</strong> ${cerveza.cantidad}</p>
             `;

@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         inventarioDiv.innerHTML = inventario.map(cerveza => `
             <div class="cerveza-item">
                 <p><strong>Nombre:</strong> ${cerveza.nombre}</p>
-                <p><strong>Marca:</strong> ${cerveza.marca}</p>
+                <p><strong>Unidad de venta:</strong> ${cerveza.marca}</p>
                 <p><strong>Tipo:</strong> ${cerveza.tipo}</p>
                 <p><strong>Cantidad:</strong> ${cerveza.cantidad}</p>
             </div>
