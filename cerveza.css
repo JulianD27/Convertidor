@@ -37,10 +37,10 @@ header h1 {
     color: #fff;
     padding: 1rem;
     width: 250px;
-    min-height: 100vh;
+    min-height: 150vh;
     box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
     overflow-y: auto; /* Mantenemos esto para el scroll de la sidebar */
-    max-height: 100vh;
+    max-height: 150vh;
 }
 
 .sidebar nav ul {
@@ -164,31 +164,25 @@ button[type="button"]:hover {
 
 
 /* Estilos para los botones normales de la sidebar (y otros .btn.btn-secondary) */
-.btn.btn-secondary {
-    background-color: #6c757d;
+.btn-inicio {
+    margin-left: 0px;
+    background-color: #20c9a6;
     color: #fff;
-    border-top: 2px solid #007bff; /* Borde superior azul para los botones de la sidebar */
-    border-bottom: 2px solid #007bff; /* Borde inferior azul para los botones de la sidebar */
-    border-left: none;
-    border-right: none;
-    border-radius: 0;
+    border: none;
+    border-radius: 15px;
     padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 500;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 0.7rem;
-    transition: background 0.2s, color 0.2s;
-    box-shadow: none;
-    margin: 0.5rem 0;
+    display: block;
+    width: 85%;
     text-align: left;
+    margin: -0.5rem 0;
     text-decoration: none;
 }
 
-.btn.btn-secondary:hover,
-.sidebar nav ul li.active > .btn.btn-secondary {
-    background-color: #007bff;
+.btn-inicio:hover {
+    background-color: #17a88b;
     color: #fff;
 }
 

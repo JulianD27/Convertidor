@@ -1,4 +1,4 @@
-/* Inventario.css - Estilo moderno y consistente con los anteriores */
+/* Inventario licor.css - Igual a Inventario.css */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -58,8 +58,6 @@ header h1 {
     align-items: center;
 }
 
-
-
 /* Main Content */
 .app-container {
     display: flex;
@@ -90,16 +88,16 @@ h2 {
     margin: 0 auto;
 }
 
-.cerveza-item {
+.licor-item {
     border-bottom: 1px solid #e0e0e0;
     padding: 1rem 0;
 }
 
-.cerveza-item:last-child {
+.licor-item:last-child {
     border-bottom: none;
 }
 
-.cerveza-item p {
+.licor-item p {
     margin: 0.2rem 0;
     font-size: 1.05rem;
     color: #333;

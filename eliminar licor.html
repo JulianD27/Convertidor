@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Licor - Inventario</title>
+    <link rel="stylesheet" href="eliminar licor.css">
+    <script src="eliminar licor.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-wine-bottle"></i> Eliminar Licor del Inventario</h1>
+        </header>
+        
+        <div class="app-container">
+            <aside class="sidebar">
+                <nav>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="cerveza.html" class="btn-inicio">
+                                <i class="fas fa-list"></i> Volver al inicio
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            
+            <main class="content">
+                <section id="eliminar" class="section active">
+                    <div class="eliminar-container">
+                        <h2><i class="fas fa-minus-circle"></i> Eliminar Licor</h2>
+                        <p class="description">Ingrese el nombre del licor que desea eliminar del inventario.</p>
+                        
+                        <form id="form-eliminar-licor">
+                            <div class="form-group">
+                                <label for="nombre-eliminar-licor">Nombre del licor:</label>
+                                <input type="text" id="nombre-eliminar-licor" placeholder="Ej: Ron Añejo" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="confirmacion-licor">Confirmar eliminación:</label>
+                                <input type="checkbox" id="confirmacion-licor" required>
+                                <label for="confirmacion-licor" class="checkbox-label">Sí, deseo eliminar este licor</label>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-danger">
+                                    <i class="fas fa-trash-alt"></i> Eliminar Permanentemente
+                                </button>
+                                <button type="button" id="btn-cancelar-licor" class="btn btn-secondary">
+                                    <i class="fas fa-times"></i> Cancelar
+                                </button>
+                            </div>
+                        </form>
+                        
+                        <div id="resultado-eliminacion-licor" class="resultado"></div>
+                    </div>
+                    
+                    <div class="listado-eliminar">
+                        <h3><i class="fas fa-list"></i> Licores en Inventario</h3>
+                        <div id="lista-licores" class="inventario-container">
+                            <p class="loading">Cargando lista de licores...</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

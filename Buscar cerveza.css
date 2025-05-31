@@ -57,7 +57,7 @@ header h1 {
     align-items: center;
 }
 
-.sidebar nav ul li:hover {
+/*.sidebar nav ul li:hover {
     background-color: #007bff;
 }
 
@@ -181,6 +181,28 @@ button.btn-secondary:hover {
         max-width: 95vw;
         padding: 1rem;
     }
+}
+
+.btn-inicio {
+    margin-left: 0px;
+    background-color: #20c9a6;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: block;
+    width: 85%;
+    text-align: left;
+    margin: -1.8rem 0;
+    text-decoration: none;
+}
+
+.btn-inicio:hover {
+    background-color: #17a88b;
+    color: #fff;
 }
 /*.btn.btn-secondary {
     background-color: #6c757d;

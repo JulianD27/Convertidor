@@ -55,11 +55,11 @@ header h1 {
     transition: background-color 0.3s ease;
 }
 
-.sidebar nav ul li.active,
+/*.sidebar nav ul li.active,
 .sidebar nav ul li:hover {
     background-color: #007bff;
     color: #fff;
-}
+}*/
 
 
 .app-container {
@@ -105,7 +105,7 @@ label {
 
 input[type="text"],
 input[type="number"] {
-    width: 100%;
+    width: 97%;
     padding: 0.8rem;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -168,4 +168,26 @@ button.btn-danger:hover {
         width: 100%;
         min-height: auto;
     }
+}
+
+.btn-inicio {
+    margin-left: 0px;
+    background-color: #20c9a6;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: block;
+    width: 85%;
+    text-align: left;
+    margin: -2.5rem 0;
+    text-decoration: none;
+}
+
+.btn-inicio:hover {
+    background-color: #17a88b;
+    color: #fff;
 }
